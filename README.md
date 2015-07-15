@@ -3,13 +3,6 @@ Building a Chrome developers tool. Because its not like building a web page.
 
 ## Quickstart
 
-Install node.
-
-Then install gulp:
-
-```
-npm install --global gulp
-```
 
 Create a Manifest file called manifest.json.
 
@@ -61,7 +54,7 @@ chrome.devtools.panels.create(
 10. Press Option + Command + J a few times until you see your extension.
 
 
-## Changing the DOM of your page
+## Next : Changing the DOM of your page
 
 In your manifest, add a content script:
 
@@ -83,7 +76,19 @@ body.style.backgroundColor = "#FF0000"
 Note: you might want to uninstall your extension after you try this.
 
 
+## Advanced : getting your dev tool panel to talk with the inspected Window
+So, your dev tool panel ("panel.html") needs to be able to communicate with whatever is going on in your inspected window.
 
+
+## Tooling
+
+Install node.
+
+Then install gulp:
+
+```
+npm install --global gulp
+```
 
 
 ## The manifest file
