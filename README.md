@@ -2,9 +2,20 @@
 Building a Chrome developers tool. Because its not like building a web page.
 
 ## Quickstart
-1. Create a Manifest file called manifest.json.
-2. Create an HTML file for your panel. Name it devtools.html.
-3. Add this into your manifest.json
+
+Install node.
+
+Then install gulp:
+
+```
+npm install --global gulp
+```
+
+Create a Manifest file called manifest.json.
+
+Create an HTML file for your panel. Name it devtools.html.
+
+Add this into your manifest.json
 
 ```
 {
@@ -43,7 +54,11 @@ chrome.devtools.panels.create(
 
 ```Hello, World```
 
+8. Install [this](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc?hl=en) tool to help you make a Chrome extension.
 
+9. Chrome > More tools > extensions and click on "Load unpacked extension".
+
+10. Press Option + Command + J a few times until you see your extension.
 
 
 ## The manifest file
