@@ -61,6 +61,31 @@ chrome.devtools.panels.create(
 10. Press Option + Command + J a few times until you see your extension.
 
 
+## Changing the DOM of your page
+
+In your manifest, add a content script:
+
+```
+"content_scripts" : [{
+      "matches" : ["<all_urls>"],
+      "js" : ["content_script.js"],
+      "run_at" : "document_end"
+  }]
+```
+
+In the content_script, add some javascript.
+
+```
+var body = document.querySelector('body');
+body.style.backgroundColor = "#FF0000"
+```
+
+Note: you might want to uninstall your extension after you try this.
+
+
+
+
+
 ## The manifest file
 The manifest is a JSON file.
 
